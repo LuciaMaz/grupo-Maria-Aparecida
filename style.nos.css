@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .cabecalho{
     background-color: #708325;
@@ -13,7 +14,7 @@
 
 }
 .cabecalho-lista-item{
-    display: inline-block;
+    display:inline-block;
     margin: 0 16px;
     font-size: 24px;
    
@@ -31,7 +32,6 @@
 
 }
 .quem-somos-bobibo{
-    width: 50%;
     font-size: larger;
 
 }
@@ -49,6 +49,7 @@
    align-items:center;
    padding: 34px 90px;
    }
+   
   .missao-conteudo{
     text-align: justify;
 font-size: larger;
@@ -75,7 +76,6 @@ font-size: larger;
 .cabecalho-lista li a {
     text-decoration: none;
     padding: 10px 20px;
-    border: 2px solid #708325; /* Cor da borda semelhante à da imagem */
     border-radius: 20px; /* Bordas arredondadas */
     color: #000000; /* Cor do texto */
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -100,3 +100,21 @@ footer{
     margin: 0  3em 0 0;
    
    }
+   @media screen and (max-width: 1000px) {
+    .sobre-bobibo{
+        flex-direction: column; 
+    }
+
+    .sobre-bobibo-titulo{  
+        margin: 0%;
+    }
+    .cabecalho{
+       height: 200px;
+       
+    }
+.cabecalho-lista{
+    display:grid;
+    
+}
+
+  }
